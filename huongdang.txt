@@ -1,0 +1,21 @@
+git clone https://github.com/lethikieuhoa/lrv.git=> code này đã có phan login
+cd lrv
+composer install
+npm install
+npm run dev
+copy .env.example sửa lại thanh .env, cấu hình database trong file này
+php artisan key:generate
+
+đã có phần login 
+php artisan migrate: chạy database
+php artisan serve// chạy lệnh để chạy php 
+hoặc cấu hình trong config
+<VirtualHost *:801>
+    DocumentRoot D:/xampp/htdocs/laravelnext/lrv/public
+    #ServerName easymultiauthadminlte.local
+
+    <Directory D:/xampp/htdocs/laravelnext/lrv/public>
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
